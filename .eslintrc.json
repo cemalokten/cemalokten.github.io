@@ -1,6 +1,10 @@
 {
   "extends": ["airbnb-base/legacy", "prettier", "plugin:node/recommended"],
-  "plugins": ["prettier",  "html", "css"],
+  
+  "plugins": ["prettier", "html"],
+    "settings": {
+        "html/html-extensions": [".html", ".we"]  // consider .html and .we files as HTML
+    },
   "rules": {
     "no-restricted-globals": ["error", "event", "fdescribe"],
     "prettier/prettier": ["off", { "singleQuote": true }],
@@ -11,4 +15,6 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off"
   }
+  
 }
+
