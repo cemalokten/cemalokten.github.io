@@ -44,7 +44,7 @@ section {
 }
 
 span {
-  transition: transform 0.1s;
+  transition: transform 0.15s;
   font-family: 'Luculent';
   font-size: 0.9rem;
   position: relative;
@@ -151,12 +151,12 @@ img {
   z-index: 20;
 
   margin: auto;
-  max-width: 88vw;
+  max-width: 40vw;
   max-height: 80vh;
 
   opacity: 1;
 
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1));
 }
 
 .img--container {
@@ -180,8 +180,8 @@ img {
   margin: auto;
 
   opacity: 0;
-  /* transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out; */
+  transition: opacity 0.15s ease-in-out;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  -moz-transition: opacity 0.15s ease-in-out;
+  -o-transition: opacity 0.15s ease-in-out;
 }
