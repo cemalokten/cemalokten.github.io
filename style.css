@@ -149,13 +149,11 @@ img {
   right: 0;
   bottom: 0;
   z-index: 20;
-
+  border-radius: 0.1em;
   margin: auto;
   max-width: 40vw;
   max-height: 80vh;
-
   opacity: 1;
-
   filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1));
 }
 
@@ -165,7 +163,6 @@ img {
   left: 0;
   pointer-events: none;
   z-index: 10;
-
   width: 100vw;
   height: 100vh;
 }
@@ -178,7 +175,6 @@ img {
   bottom: 0;
 
   margin: auto;
-
   opacity: 0;
   transition: opacity 0.15s ease-in-out;
   -webkit-transition: opacity 0.15s ease-in-out;

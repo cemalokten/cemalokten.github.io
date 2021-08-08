@@ -18,7 +18,7 @@ const arr = Array.from(document.getElementsByTagName('section'));
 
 arr.forEach((section, index) => {
   section.addEventListener('click', function (e) {
-    if (index < 3) {
+    if (index < 4) {
       arr[index + 1].scrollIntoView({ behavior: 'smooth' });
     } else {
       arr[0].scrollIntoView({ behavior: 'smooth' });
