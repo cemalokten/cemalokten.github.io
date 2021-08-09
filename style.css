@@ -44,7 +44,7 @@ section {
 }
 
 span {
-  transition: transform 0.1s;
+  transition: transform 0.15s;
   font-family: 'Luculent';
   font-size: 0.9rem;
   position: relative;
@@ -60,7 +60,6 @@ span {
   text-align: center;
   line-height: 0.8;
   cursor: pointer;
-  filter: blur(0px);
 }
 
 span:hover {
@@ -69,7 +68,7 @@ span:hover {
 
 @media (min-width: 800px) {
   html {
-    font-size: 3.4vw;
+    font-size: 3.2vw;
   }
 
   span {
@@ -149,14 +148,12 @@ img {
   right: 0;
   bottom: 0;
   z-index: 20;
-
+  border-radius: 0.1em;
   margin: auto;
-  max-width: 88vw;
+  max-width: 40vw;
   max-height: 80vh;
-
   opacity: 1;
-
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1));
 }
 
 .img--container {
@@ -165,7 +162,6 @@ img {
   left: 0;
   pointer-events: none;
   z-index: 10;
-
   width: 100vw;
   height: 100vh;
 }
@@ -178,10 +174,9 @@ img {
   bottom: 0;
 
   margin: auto;
-
   opacity: 0;
-  /* transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out; */
+  transition: opacity 0.15s ease-in-out;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  -moz-transition: opacity 0.15s ease-in-out;
+  -o-transition: opacity 0.15s ease-in-out;
 }
