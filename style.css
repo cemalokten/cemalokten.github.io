@@ -60,7 +60,6 @@ span {
   text-align: center;
   line-height: 0.8;
   cursor: pointer;
-  filter: blur(0px);
 }
 
 span:hover {
@@ -69,7 +68,7 @@ span:hover {
 
 @media (min-width: 800px) {
   html {
-    font-size: 3.4vw;
+    font-size: 3.2vw;
   }
 
   span {

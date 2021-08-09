@@ -3,7 +3,6 @@
 const body = document.querySelector('body');
 
 const spans = document.getElementsByTagName('span');
-const colourNames = ['rgb(0, 255, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)'];
 
 const screensaverContainer = document.querySelector('.screensaver--container');
 const screensaverClock = document.querySelector('.screensaver--clock');
@@ -25,20 +24,25 @@ arr.forEach((section, index) => {
     }
   });
 });
-// Returns a random positive whole number between two values (min, max)
-// Used throughout to select random array elements
-function randomNumber(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
+
+// Colours
+
+const colourNames = ['rgb(0, 0, 255)', 'rgb(255, 0, 0)'];
+
+let i = 0;
+
+function colourPicker(arr) {
+  if (i < arr.length - 1) {
+    i++;
+    return arr[i];
+  } else if (i >= arr.length - 1) {
+    i = 0;
+    return arr[i];
+  }
 }
 
-// Return random colour name from colourNames array using randomNumber()
-function randomColour() {
-  return colourNames[randomNumber(0, colourNames.length - 1)];
-}
-
-// eslint-disable-next-line no-restricted-syntax
 for (let item of spans) {
-  item.style.color = randomColour();
+  item.style.color = colourPicker(colourNames);
 }
 
 // 04 - Time screensaver
