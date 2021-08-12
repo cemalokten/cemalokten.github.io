@@ -27,19 +27,19 @@
 html {
   font-family: 'Salmanazar-Regular';
   font-size: 5.8vw;
-  /* cursor: url('https://oridnary.se/images/cursor.png'), auto !important; */
   background-color: rgb(245, 245, 245);
 }
 
 p {
   line-height: 1.5rem;
+  cursor: pointer;
 }
 
 section {
   padding: 2rem;
   display: flex;
   align-items: center;
-
+  cursor: def;
   min-height: 100vh;
 }
 
