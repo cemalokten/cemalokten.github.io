@@ -3,6 +3,7 @@
 A simple portfolio of the projects I have completed to date plus a little bit about me.
 
 Font 1 - Trial version of `Salmanzar` font by [205](https://www.205.tf/Font/37/salmanazar/) 
+
 Font 2 - `Luculent` by [Andrew Kensler](http://eastfarthing.com/luculent/)
 
 ### 🦺 Testing
